@@ -1,0 +1,14 @@
+<div class="row sidenav" [ngStyle]="menuStyle">
+  <ul id="menu" (mouseleave)="removeClass()" class="menuList hide">
+    <a
+      [id]="item.id"
+      *ngFor="let item of menuOptions"
+      [routerLink]="item.id"
+      [ngClass]="'menu-item'"
+      (mouseenter)="mouseEnterItem(item.id)"
+      (mouseleave)="mouseLeaveItem(item.id)"
+    >
+      <li>{{ item.title }}</li>
+    </a>
+  </ul>
+</div>

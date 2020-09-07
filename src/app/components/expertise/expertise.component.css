@@ -1,0 +1,13 @@
+.card {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: gold !important;
+  font-weight: bold;
+}

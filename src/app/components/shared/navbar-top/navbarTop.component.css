@@ -1,0 +1,40 @@
+.sidenav {
+  position: fixed;
+  top: 30%;
+  left: 0px;
+  z-index: 10;
+}
+
+.sidenav > ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px 0px 0px 10px;
+}
+
+li {
+  color: white;
+  transition: 0.3s ease-in-out;
+  padding: 5px 5px 5px 15px;
+}
+
+li:hover {
+  background-color: white;
+  color: black;
+}
+
+.zoom > li {
+  transform: scale(1.3);
+  padding-left: 30px;
+  padding-right: 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+.reduce > li {
+  transform: scale(0.9);
+}

@@ -1,0 +1,14 @@
+p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: gold !important;
+  font-weight: bold;
+}

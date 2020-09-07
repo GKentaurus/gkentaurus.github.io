@@ -1,0 +1,14 @@
+<div class="row sidenav">
+  <ul id="menu" (mouseleave)="removeClass()">
+    <a
+      [id]="item.id"
+      *ngFor="let item of menuOptions"
+      [href]="item.anchor"
+      [ngClass]="'menu-item'"
+      (mouseenter)="mouseEnterItem(item.id)"
+      (mouseleave)="mouseLeaveItem(item.id)"
+    >
+      <li>{{ item.title }}</li>
+    </a>
+  </ul>
+</div>

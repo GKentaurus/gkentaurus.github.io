@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  background-color: black !important;
+  color: lightgray !important;
+}
+
+.bg-a1 {
+  background-color: #2b2c2c;
+}
+
+.bg-a2 {
+  background-color: #2d2e2e;
+}
+
+.bg-b1 {
+  background-color: #292a2a;
+}
+
+.bg-b2 {
+  background-color: #2b2c2c;
+}
+
+.panel {
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+}
+
+.lPanel {
+  text-align: right;
+}
+
+.rPanel {
+  text-align: left;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.mid-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
