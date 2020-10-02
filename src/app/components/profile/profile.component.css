@@ -3,10 +3,6 @@ p {
   text-align: justify;
 }
 
-h1 {
-  font-size: 40px;
-}
-
 .highlight {
   color: var(--title-highlight) !important;
   font-weight: bold;

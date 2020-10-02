@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { progressBars } from '../shared/animations/progress-bars';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
+  animations: [progressBars]
 })
 export class SkillsComponent implements OnInit {
+  state = false;
   skillData = [
     {
       title: 'HTML5',
@@ -52,7 +56,7 @@ export class SkillsComponent implements OnInit {
       percent: 40
     },
     {
-      title: 'Java 8',
+      title: 'Java',
       percent: 60
     },
     {
@@ -64,7 +68,14 @@ export class SkillsComponent implements OnInit {
       percent: 40
     }
   ];
-  constructor() {}
+  constructor(private title: Title) {}
 
-  ngOnInit(): void {}
+  toogle(): void {
+    this.state = !this.state;
+    console.log(this.state);
+  }
+
+  ngOnInit(): void {
+    this.title.setTitle('GKentaurus > Habilidades');
+  }
 }

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css'],
+  styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
   expData = [
@@ -14,8 +15,8 @@ export class ExperienceComponent implements OnInit {
       end: 'Diciembre 2013',
       achievements: [
         'Desarrollo de una base de datos para registro y seguimiento de equipos en garantía.',
-        'Desarrollo de una base de datos para registro y seguimiento llamadas de soporte técnico.',
-      ],
+        'Desarrollo de una base de datos para registro y seguimiento llamadas de soporte técnico.'
+      ]
     },
     {
       company: 'QPCOM Colombia',
@@ -23,8 +24,8 @@ export class ExperienceComponent implements OnInit {
       start: 'Enero 2014',
       end: 'Diciembre 2017',
       achievements: [
-        'Desarrollo de macros para informes de ventas por periodos.',
-      ],
+        'Desarrollo de macros para informes de ventas por periodos.'
+      ]
     },
     {
       company: 'QPCOM Colombia',
@@ -34,11 +35,13 @@ export class ExperienceComponent implements OnInit {
       achievements: [
         'Desarrollo de macros para informes de cartera.',
         'Desarrollo de macros para sugeridos de inventario.',
-        'Implementación de una intranet básica.',
-      ],
-    },
+        'Implementación de una intranet básica.'
+      ]
+    }
   ];
-  constructor() {}
+  constructor(private title: Title) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.title.setTitle('GKentaurus > Experiencia');
+  }
 }

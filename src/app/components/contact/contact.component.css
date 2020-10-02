@@ -2,6 +2,8 @@
   text-align: center;
   background-color: #434343 !important;
   border: 0px !important;
+  transition: all .2s ease-in-out;
+
 }
 
 .card:hover {
@@ -17,16 +19,18 @@
   font-size: 3em !important;
 }
 
-h5 {
+h6 {
   text-transform: uppercase;
-  margin-top: 15px;
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--title-highlight);
+  /* margin-top: 10px; */
 }
 
 a {
   color: white;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  color: var(--title-highlight);
 }

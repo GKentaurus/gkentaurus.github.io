@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+// import { Routes, RouterModule } from '@angular/router';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
@@ -9,18 +10,46 @@ import { EducationComponent } from './components/education/education.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'perfil', component: ProfileComponent },
-  { path: 'pericia', component: ExpertiseComponent },
-  { path: 'habilidades', component: SkillsComponent },
-  { path: 'experiencia', component: ExperienceComponent },
-  { path: 'educacion', component: EducationComponent },
-  { path: 'contacto', component: ContactComponent },
-  { path: '**', pathMatch: 'full', redirectTo: '' },
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: { animationState: 'One' }
+  },
+  {
+    path: 'perfil',
+    component: ProfileComponent,
+    data: { animationState: 'Two' }
+  },
+  {
+    path: 'pericia',
+    component: ExpertiseComponent,
+    data: { animationState: 'Three' }
+  },
+  {
+    path: 'habilidades',
+    component: SkillsComponent,
+    data: { animationState: 'Four' }
+  },
+  {
+    path: 'experiencia',
+    component: ExperienceComponent,
+    data: { animationState: 'Five' }
+  },
+  {
+    path: 'educacion',
+    component: EducationComponent,
+    data: { animationState: 'Six' }
+  },
+  {
+    path: 'contacto',
+    component: ContactComponent,
+    data: { animationState: 'Seven' }
+  },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}

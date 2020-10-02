@@ -13,9 +13,10 @@
           </h6>
           <div class="progress">
             <div
+              [@progbar]="data.percent"
               class="progress-bar"
               role="progressbar"
-              style="width: {{ data.percent }}%"
+              style="width: 0%"
               aria-valuenow="{{ data.percent }}"
               aria-valuemin="0"
               aria-valuemax="100"
