@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuOptionsService } from '../../../services/menu-options.service';
 declare var $: any;
 
 @Component({
@@ -7,67 +8,14 @@ declare var $: any;
   styleUrls: ['./navbarLeft.component.css'],
 })
 export class NavbarLeftComponent implements OnInit {
-  menuOptions = [
-    {
-      title: 'Inicio',
-      id: 'inicio',
-      show: true,
-    },
-    {
-      title: 'Perfil',
-      id: 'perfil',
-      show: true,
-    },
-    {
-      title: 'Pericia',
-      id: 'pericia',
-      show: true,
-    },
-    {
-      title: 'Habilidades',
-      id: 'habilidades',
-      show: true,
-    },
-    {
-      title: 'Experiencia',
-      id: 'experiencia',
-      show: true,
-    },
-    {
-      title: 'Educación',
-      id: 'educacion',
-      show: true,
-    },
-    {
-      title: 'Perfiles',
-      id: 'perfiles',
-      show: true,
-    },
-    {
-      title: 'Portafolio',
-      id: 'portafolio',
-      show: true,
-    },
-    {
-      title: 'Clientes',
-      id: 'clientes',
-      show: true,
-    },
-    {
-      title: 'Contacto',
-      id: 'contacto',
-      show: true,
-    },
-  ];
+  menuOptions: any[];
 
-  menuStyle = {
-    position: 'fixed',
-    top: '0px',
-    left: '0px',
-    'z-index': 10,
-  };
+  menuStyle: any;
   windowHeight: number;
-  constructor() {}
+  constructor(private menu: MenuOptionsService) {
+    this.menuOptions = this.menu.options;
+    this.menuStyle = this.menu.style;
+  }
 
   ngOnInit(): void {
     $('.sidenav').hide();

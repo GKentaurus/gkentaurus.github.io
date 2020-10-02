@@ -4,21 +4,22 @@
   border-radius: 50%;
   background-color: #fff;
   margin: auto;
+  margin-right: 0px;
 }
 
 .firstName {
   font-size: 7vh;
   font-weight: 100;
-  margin-bottom: -25px;
+  margin-bottom: -2.5vh;
   text-transform: lowercase;
 }
 
 .secondName {
   font-size: 8vh;
   font-weight: 600;
-  margin-top: -25px;
+  margin-top: -2.5vh;
   text-transform: uppercase;
-  color: gold;
+  color: var(--title-highlight);
 }
 
 .jobTitle {
@@ -33,6 +34,10 @@
   width: 100%;
   bottom: 0;
   left: 0;
+}
+
+.contact-info {
+  font-size: 2vh;
 }
 
 div.col {

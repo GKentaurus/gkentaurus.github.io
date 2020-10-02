@@ -5,10 +5,9 @@ p {
 
 h1 {
   font-size: 40px;
-  text-transform: uppercase;
 }
 
 .highlight {
-  color: gold !important;
+  color: var(--title-highlight) !important;
   font-weight: bold;
 }

@@ -1,23 +1,32 @@
+:root {
+  --panel-bg-color-a1: #2b2c2c;
+  --panel-bg-color-a2: #2d2e2e;
+  --panel-bg-color-b1: #292a2a;
+  --panel-bg-color-b2: #2b2c2c;
+  --title-highlight: #ffd900;
+}
+
 html,
 body {
   background-color: black !important;
   color: lightgray !important;
+  font-size: 18px;
 }
 
 .bg-a1 {
-  background-color: #2b2c2c;
+  background-color: var(--panel-bg-color-a1);
 }
 
 .bg-a2 {
-  background-color: #2d2e2e;
+  background-color: var(--panel-bg-color-a2);
 }
 
 .bg-b1 {
-  background-color: #292a2a;
+  background-color: var(--panel-bg-color-b1);
 }
 
 .bg-b2 {
-  background-color: #2b2c2c;
+  background-color: var(--panel-bg-color-b2);
 }
 
 .panel {
@@ -43,4 +52,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+hr {
+  background-color: grey;
+}
+
+ul.component {
+  margin-bottom: -5px;
+}
+
+ul.component > li {
+  list-style-type: none;
+  margin-left: -20px;
 }

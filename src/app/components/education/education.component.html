@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row full-height">
+    <div class="col-sm-4 bg-b1 panel lPanel">
+      <div class="mid-container">
+        <h1>Títulos<br /><small>académicos</small></h1>
+      </div>
+    </div>
+    <div class="col-sm-8 bg-b2 panel rPanel">
+      <div class="mid-container">
+        <div
+          class="row row-cols-1"
+          *ngFor="let data of educationData; let i = index"
+        >
+          <h5 class="highlight">
+            {{ data.title }}
+            <br />
+          </h5>
+          <h6 class="year">{{ data.finished }}</h6>
+          <span class="institution">{{ data.institution }}</span>
+          <ul class="component" *ngIf="data.achievements.length > 0">
+            <li *ngFor="let achiev of data.achievements">{{ achiev }}</li>
+          </ul>
+          <hr
+            *ngIf="educationData.length > 1 && i < educationData.length - 1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

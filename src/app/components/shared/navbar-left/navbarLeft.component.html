@@ -8,7 +8,9 @@
       (mouseenter)="mouseEnterItem(item.id)"
       (mouseleave)="mouseLeaveItem(item.id)"
     >
-      <li>{{ item.title }}</li>
+      <ng-container *ngIf="item.show">
+        <li>{{ item.title }}</li>
+      </ng-container>
     </a>
   </ul>
 </div>

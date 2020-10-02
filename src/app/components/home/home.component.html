@@ -1,4 +1,11 @@
-<div class="container-fluid">
+<div
+  [class]="{
+    'container-fluid': true,
+    animate__animated: true,
+    animate__fadeIn: animation,
+    animate__fadeOut: !animation
+  }"
+>
   <div class="row full-height">
     <div class="col-sm-4 bg-a1 panel lPanel">
       <div class="mid-container">
@@ -17,7 +24,7 @@
             <hr />
           </div>
         </div>
-        <div class="row">
+        <div class="row text-center contact-info">
           <div class="col">
             <h5>Ubicación</h5>
             Bogotá D.C., Colombia
@@ -28,7 +35,7 @@
           </div>
           <div class="col">
             <h5>Correo</h5>
-            <a href="mailto:camorenoc@outlook.com">camorenoc@outlook.com</a>
+            <a href="mailto:gkentaurus@outlook.com">gkentaurus@outlook.com</a>
           </div>
           <div class="col">
             <h5>GitHub</h5>

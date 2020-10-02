@@ -1,0 +1,119 @@
+<div class="container-fluid">
+  <div class="row full-height">
+    <div class="col-sm-4 bg-a1 panel lPanel">
+      <div class="mid-container">
+        <h1>Contacto</h1>
+      </div>
+    </div>
+    <div class="col-sm-8 bg-a2 panel rPanel">
+      <div class="mid-container">
+        <div class="row row-cols-1 row-cols-md-1 text-center">
+          <h5>Sientete libre de contactarme por cualquier medio</h5>
+        </div>
+        <div class="row row-cols-2 row-cols-md-3">
+          <div class="col mb-4" *ngIf="contactData.whatsapp.show">
+            <!-- HackerRank Data -->
+            <div class="card">
+              <a [href]="contactData.whatsapp.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">Whatsapp</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4" *ngIf="contactData.email.show">
+            <!-- HackerRank Data -->
+            <div class="card">
+              <a [href]="contactData.email.link" target="_blank">
+                <div class="card-body">
+                  <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">Correo</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4" *ngIf="contactData.skype.show">
+            <!-- HackerRank Data -->
+            <div class="card">
+              <a [href]="contactData.skype.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-skype fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">skype</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-3 row-cols-md-3">
+          <div class="col mb-4" *ngIf="contactData.facebook.show">
+            <!-- Facebook Data -->
+            <div class="card">
+              <a [href]="contactData.facebook.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">facebook</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4" *ngIf="contactData.twitter.show">
+            <!-- Twitter Data -->
+            <div class="card">
+              <a [href]="contactData.twitter.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">twitter</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4" *ngIf="contactData.instagram.show">
+            <!-- Instagram Data -->
+            <div class="card">
+              <a [href]="contactData.instagram.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">instagram</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4" *ngIf="contactData.linkedin.show">
+            <!-- linkedin Data -->
+            <div class="card">
+              <a [href]="contactData.linkedin.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">linkedin</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4" *ngIf="contactData.github.show">
+            <!-- Github Data -->
+            <div class="card">
+              <a [href]="contactData.github.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">github</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col mb-4" *ngIf="contactData.hackerrank.show">
+            <!-- HackerRank Data -->
+            <div class="card">
+              <a [href]="contactData.hackerrank.link" target="_blank">
+                <div class="card-body">
+                  <i class="fab fa-hackerrank fa-2x" aria-hidden="true"></i>
+                  <h5 class="card-title">hacker rank</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

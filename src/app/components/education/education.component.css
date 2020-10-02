@@ -1,0 +1,16 @@
+li::first-letter {
+  color: var(--title-highlight);
+}
+
+.highlight {
+  color: var(--title-highlight) !important;
+}
+
+.institution {
+  margin-top: -10px;
+  /* text-decoration: underline; */
+}
+
+.year {
+  margin-top: -10px;
+}

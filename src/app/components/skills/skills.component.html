@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row full-height">
+    <div class="col-sm-4 bg-b1 panel lPanel">
+      <div class="mid-container">
+        <h1>Habilidades</h1>
+      </div>
+    </div>
+    <div class="col-sm-8 bg-b2 panel rPanel">
+      <div class="mid-container">
+        <div class="row row-cols-1" *ngFor="let data of skillData">
+          <h6 class="title">
+            {{ data.title }} <small class="percent">{{ data.percent }}%</small>
+          </h6>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: {{ data.percent }}%"
+              aria-valuenow="{{ data.percent }}"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

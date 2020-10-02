@@ -8,6 +8,11 @@ import { NavbarTopComponent } from './components/shared/navbar-top/navbarTop.com
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ExpertiseComponent } from './components/expertise/expertise.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { MenuOptionsService } from './services/menu-options.service';
 
 @NgModule({
   declarations: [
@@ -17,9 +22,13 @@ import { ExpertiseComponent } from './components/expertise/expertise.component';
     HomeComponent,
     ProfileComponent,
     ExpertiseComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    EducationComponent,
+    ContactComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
-  bootstrap: [AppComponent],
+  providers: [MenuOptionsService],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

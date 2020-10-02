@@ -8,6 +8,6 @@ h5 {
 }
 
 .highlight {
-  color: gold !important;
+  color: var(--title-highlight) !important;
   font-weight: bold;
 }

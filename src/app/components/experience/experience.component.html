@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row full-height">
+    <div class="col-sm-4 bg-a1 panel lPanel">
+      <div class="mid-container">
+        <h1>Experiencia <br /><small>laboral</small></h1>
+      </div>
+    </div>
+    <div class="col-sm-8 bg-a2 panel rPanel">
+      <div class="mid-container">
+        <div class="row row-cols-1" *ngFor="let data of expData; let i = index">
+          <h5 class="title">
+            {{ data.company }}
+            <small class="job">{{ data.job }}</small>
+          </h5>
+          <span class="worktime">{{ data.start }} - {{ data.end }}</span>
+          <ul class="component">
+            <li *ngFor="let achiev of data.achievements">{{ achiev }}</li>
+          </ul>
+          <hr *ngIf="expData.length > 1 && i < expData.length - 1" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

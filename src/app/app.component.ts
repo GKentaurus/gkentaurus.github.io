@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gkentaurus';
+  constructor() {}
+
+  public getRouterOutletState(outlet): any {
+    return outlet.isActivated ? outlet.activatedRoute : '';
+  }
 }
