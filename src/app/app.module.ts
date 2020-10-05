@@ -14,6 +14,8 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { EducationComponent } from './pages/education/education.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MenuOptionsService } from './services/menu-options.service';
+import { CoursesComponent } from './pages/courses/courses.component';
+import { Err404Component } from './components/errors/err404/err404.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MenuOptionsService } from './services/menu-options.service';
     SkillsComponent,
     ExperienceComponent,
     EducationComponent,
-    ContactComponent
+    ContactComponent,
+    CoursesComponent,
+    Err404Component
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [MenuOptionsService],

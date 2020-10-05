@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40vh;
+  font-weight: 900;
+  color: var(--title-highlight);
+}
+
+a {
+  text-decoration: underline;
+  color: lightgray
+}
+
+span {
+  font-weight: 200;
+}

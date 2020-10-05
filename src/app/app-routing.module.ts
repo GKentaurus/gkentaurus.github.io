@@ -8,44 +8,57 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { EducationComponent } from './pages/education/education.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CoursesComponent } from './pages/courses/courses.component';
+
+import { Err404Component } from './components/errors/err404/err404.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
     data: { animationState: 'One' }
   },
   {
-    path: 'perfil',
+    path: 'profile',
     component: ProfileComponent,
     data: { animationState: 'Two' }
   },
   {
-    path: 'pericia',
+    path: 'expertise',
     component: ExpertiseComponent,
     data: { animationState: 'Three' }
   },
   {
-    path: 'habilidades',
+    path: 'skills',
     component: SkillsComponent,
     data: { animationState: 'Four' }
   },
   {
-    path: 'experiencia',
+    path: 'experience',
     component: ExperienceComponent,
     data: { animationState: 'Five' }
   },
   {
-    path: 'educacion',
+    path: 'education',
     component: EducationComponent,
     data: { animationState: 'Six' }
   },
   {
-    path: 'contacto',
-    component: ContactComponent,
+    path: 'courses',
+    component: CoursesComponent,
     data: { animationState: 'Seven' }
   },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: { animationState: 'Eight' }
+  },
+  {
+    path: '404',
+    component: Err404Component,
+    data: { animationState: 'Nine' }
+  },
+  { path: '**', pathMatch: 'full', redirectTo: '404' }
 ];
 
 @NgModule({
