@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 // import { Routes, RouterModule } from '@angular/router';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { ExpertiseComponent } from './components/expertise/expertise.component';
-import { SkillsComponent } from './components/skills/skills.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { EducationComponent } from './components/education/education.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ExpertiseComponent } from './pages/expertise/expertise.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
+import { EducationComponent } from './pages/education/education.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {

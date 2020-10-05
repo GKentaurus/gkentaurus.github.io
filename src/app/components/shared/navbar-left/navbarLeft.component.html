@@ -3,7 +3,7 @@
     <div class="bg-shadow"></div>
     <ul (mouseleave)="removeClass()" class="menuList responsive">
       <a
-        [id]="item.id"
+        [id]="item.id + '-responsive'"
         *ngFor="let item of menuOptions"
         [routerLink]="item.id"
         [ngClass]="'menu-item'"
@@ -16,7 +16,7 @@
         </ng-container>
       </a>
       <a
-        [id]="item.id"
+        [id]="item.id + '-desktop'"
         *ngFor="let item of menuOptions"
         [routerLink]="item.id"
         [ngClass]="'menu-item'"

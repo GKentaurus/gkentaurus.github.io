@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { progressBars } from '../shared/animations/progress-bars';
+import { progressBars } from '../../components/shared/animations/progress-bars';
 
 @Component({
   selector: 'app-skills',
