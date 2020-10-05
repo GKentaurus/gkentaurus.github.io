@@ -1,17 +1,17 @@
 <div class="container-fluid">
   <div class="row full-height">
-    <div class="col-sm-4 bg-a1 panel lPanel">
+    <div class="col-sm-12 col-md-12 col-lg-4 bg-a1 panel lPanel">
       <div class="mid-container">
         <h1>Contacto</h1>
       </div>
     </div>
-    <div class="col-sm-8 bg-a2 panel rPanel">
+    <div class="col-sm-12 col-md-12 col-lg-8 bg-a2 panel rPanel">
       <div class="mid-container">
         <div class="row row-cols-1 row-cols-md-1 text-center">
           <h5>Siéntete libre de contactarme por cualquier medio</h5>
         </div>
-        <div class="row row-cols-2 row-cols-md-3">
-          <div class="col mb-4" *ngIf="contactData.whatsapp.show">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 mb-spaced">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.whatsapp.show">
             <!-- HackerRank Data -->
             <div class="card">
               <a [href]="contactData.whatsapp.link" target="_blank">
@@ -22,7 +22,7 @@
               </a>
             </div>
           </div>
-          <div class="col mb-4" *ngIf="contactData.email.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.email.show">
             <!-- HackerRank Data -->
             <div class="card">
               <a [href]="contactData.email.link" target="_blank">
@@ -33,7 +33,7 @@
               </a>
             </div>
           </div>
-          <div class="col mb-4" *ngIf="contactData.skype.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.skype.show">
             <!-- HackerRank Data -->
             <div class="card">
               <a [href]="contactData.skype.link" target="_blank">
@@ -44,9 +44,7 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="row row-cols-3 row-cols-md-3">
-          <div class="col mb-4" *ngIf="contactData.facebook.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.facebook.show">
             <!-- Facebook Data -->
             <div class="card">
               <a [href]="contactData.facebook.link" target="_blank">
@@ -57,7 +55,7 @@
               </a>
             </div>
           </div>
-          <div class="col mb-4" *ngIf="contactData.twitter.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.twitter.show">
             <!-- Twitter Data -->
             <div class="card">
               <a [href]="contactData.twitter.link" target="_blank">
@@ -68,7 +66,7 @@
               </a>
             </div>
           </div>
-          <div class="col mb-4" *ngIf="contactData.instagram.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.instagram.show">
             <!-- Instagram Data -->
             <div class="card">
               <a [href]="contactData.instagram.link" target="_blank">
@@ -79,7 +77,7 @@
               </a>
             </div>
           </div>
-          <div class="col mb-4" *ngIf="contactData.linkedin.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.linkedin.show">
             <!-- linkedin Data -->
             <div class="card">
               <a [href]="contactData.linkedin.link" target="_blank">
@@ -90,7 +88,7 @@
               </a>
             </div>
           </div>
-          <div class="col mb-4" *ngIf="contactData.github.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.github.show">
             <!-- Github Data -->
             <div class="card">
               <a [href]="contactData.github.link" target="_blank">
@@ -101,7 +99,7 @@
               </a>
             </div>
           </div>
-          <div class="col mb-4" *ngIf="contactData.hackerrank.show">
+          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.hackerrank.show">
             <!-- HackerRank Data -->
             <div class="card">
               <a [href]="contactData.hackerrank.link" target="_blank">

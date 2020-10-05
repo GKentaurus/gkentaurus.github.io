@@ -5,7 +5,7 @@ declare var $: any;
 @Component({
   selector: 'app-navbar-left',
   templateUrl: './navbarLeft.component.html',
-  styleUrls: ['./navbarLeft.component.css'],
+  styleUrls: ['./navbarLeft.component.css']
 })
 export class NavbarLeftComponent implements OnInit {
   menuOptions: any[];
@@ -18,17 +18,19 @@ export class NavbarLeftComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    $('.sidenav').hide();
+    // $('.sidenav > ul').hide();
     setTimeout(() => {
-      $('.sidenav').fadeIn();
-      const height = $('.menuList').height() / 2;
+      // $('.sidenav > ul').fadeIn();
+      const height = $('.sidenav').height() / 2;
       this.menuStyle.top = `calc(50% - ${height}px)`;
     }, 50);
   }
 
   mouseEnterItem(id: string): void {
     $('.menu-item').addClass('reduce');
-    $(`#${id}`).removeClass('reduce').addClass('zoom');
+    $(`#${id}`)
+      .removeClass('reduce')
+      .addClass('zoom');
   }
 
   mouseLeaveItem(): void {
@@ -36,6 +38,20 @@ export class NavbarLeftComponent implements OnInit {
   }
 
   removeClass(): void {
-    $('#menu > a').removeClass('reduce zoom');
+    $('.menuList > a').removeClass('reduce zoom');
+  }
+
+  hideMenu(): void {
+    $('.bg-shadow').fadeOut();
+    $('.menuList.responsive').fadeOut();
+    $('.show-button').show();
+    $('.hide-button').hide();
+  }
+
+  showMenu(): void {
+    $('.bg-shadow').fadeIn();
+    $('.menuList.responsive').fadeIn();
+    $('.show-button').hide();
+    $('.hide-button').show();
   }
 }

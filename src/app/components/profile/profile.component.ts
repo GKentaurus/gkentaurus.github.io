@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,10 +6,15 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent implements OnInit, OnDestroy {
   constructor(private title: Title) {}
 
   ngOnInit(): void {
     this.title.setTitle('GKentaurus > Perfil');
+  }
+
+  ngOnDestroy(): void {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }

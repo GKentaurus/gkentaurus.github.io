@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css']
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent implements OnInit, OnDestroy {
   expData = [
     {
       company: 'QPCOM Colombia',
@@ -43,5 +43,10 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit(): void {
     this.title.setTitle('GKentaurus > Experiencia');
+  }
+
+  ngOnDestroy(): void {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }

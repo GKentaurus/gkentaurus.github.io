@@ -14,3 +14,35 @@ li::first-letter {
   margin-top: -10px;
   /* text-decoration: underline; */
 }
+
+@media only screen and (max-width: 767px){
+  .rPanel {
+    height: 100% !important;
+  }
+
+  .mb-spaced {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: unset !important;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .rPanel {
+    height: 100% !important;
+  }
+
+  .mb-spaced {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: unset !important;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .mb-spaced {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center !important;
+  }
+}

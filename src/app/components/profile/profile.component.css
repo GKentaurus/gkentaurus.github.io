@@ -7,3 +7,24 @@ p {
   color: var(--title-highlight) !important;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 767px){
+  p {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  p {
+    font-size: 22px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  p {
+    font-size: 22px;
+    text-align: justify;
+  }
+}

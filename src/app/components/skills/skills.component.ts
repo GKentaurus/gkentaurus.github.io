@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { progressBars } from '../shared/animations/progress-bars';
 
@@ -8,7 +8,7 @@ import { progressBars } from '../shared/animations/progress-bars';
   styleUrls: ['./skills.component.css'],
   animations: [progressBars]
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent implements OnInit, OnDestroy {
   state = false;
   skillData = [
     {
@@ -77,5 +77,10 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit(): void {
     this.title.setTitle('GKentaurus > Habilidades');
+  }
+
+  ngOnDestroy(): void {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }

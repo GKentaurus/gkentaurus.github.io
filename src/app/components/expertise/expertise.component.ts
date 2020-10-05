@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './expertise.component.html',
   styleUrls: ['./expertise.component.css']
 })
-export class ExpertiseComponent implements OnInit {
+export class ExpertiseComponent implements OnInit, OnDestroy {
   cardData = [
     {
       title: 'Trabajo en equipo',
@@ -33,5 +33,10 @@ export class ExpertiseComponent implements OnInit {
 
   ngOnInit(): void {
     this.title.setTitle('GKentaurus > Pericia');
+  }
+
+  ngOnDestroy(): void {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }

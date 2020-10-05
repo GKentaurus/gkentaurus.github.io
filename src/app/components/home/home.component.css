@@ -1,29 +1,21 @@
 .profile-image {
-  width: 250px;
-  height: 250px;
   border-radius: 50%;
   background-color: #fff;
   margin: auto;
-  margin-right: 0px;
 }
 
 .firstName {
-  font-size: 7vh;
   font-weight: 100;
-  margin-bottom: -2.5vh;
   text-transform: lowercase;
 }
 
 .secondName {
-  font-size: 8vh;
   font-weight: 600;
-  margin-top: -2.5vh;
   text-transform: uppercase;
   color: var(--title-highlight);
 }
 
 .jobTitle {
-  font-size: 3vh;
   font-weight: 200;
   letter-spacing: 10px;
   word-spacing: 10px;
@@ -53,75 +45,103 @@ hr {
 }
 
 h6 {
+  padding-top: 10px !important;
+  padding-bottom: -10px !important;
   font-weight: bold;
   color: white;
 }
 
-@media only screen and (min-width : 320px) {
+@media only screen and (max-width: 767px){
   .profile-image {
     width: 150px;
     height: 150px;
-    margin: auto;
   }
 
   .firstName {
-    font-size: 3vh;
-    font-weight: 100;
-    text-transform: lowercase;
-    text-align: center;
+    font-size: 7vh;
+    margin-bottom: -2.5vh;
   }
 
   .secondName {
-    font-size: 4vh;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--title-highlight);
-    text-align: center;
+    font-size: 8vh;
+    margin-top: -2.5vh;
   }
 
   .jobTitle {
-    font-size: 2vh;
-    font-weight: 200;
-    letter-spacing: 10px;
-    word-spacing: 10px;
-    text-align: center;
+    font-size: 3vh;
   }
 
-  .contact {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+  .rPanel {
+    text-align: center !important;
+    min-height: 70vh;
+    height: 100% !important;
   }
 
-  div.col {
-    padding: 10px;
-    margin: 0px 20px 30px 20px;
-    margin-left: 30px;
-    color: lightgray;
-  }
-
-  a {
-    color: lightgray;
-    text-decoration: none;
-  }
-
-  hr {
-    background-color: lightgray;
-  }
-
-  h6 {
-    font-weight: bold;
-    color: white;
+  .mb-spaced {
+    padding-top: 30px;
+    justify-content: unset !important;
   }
 }
 
-@media only screen and (min-width : 321px) {
-  /* Styles */
+@media only screen and (min-width: 768px){
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .firstName {
+    font-size: 5vh;
+    margin-bottom: -1.5vh;
+  }
+
+  .secondName {
+    font-size: 6vh;
+    margin-top: -1.5vh;
+  }
+
+  .jobTitle {
+    font-size: 3vh;
+  }
+
+  .rPanel {
+    text-align: center !important;
+    min-height: 70vh;
+    height: 100% !important;
+  }
+
+  .mb-spaced {
+    padding-top: 100px;
+    justify-content: unset !important;
+  }
 }
 
-@media only screen and (min-width : 321px) {
-/* Styles */
+@media only screen and (min-width: 992px){
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    margin-right: 0px;
+  }
+
+  .firstName {
+    font-size: 7vh;
+  }
+
+  .secondName {
+    font-size: 8vh;
+  }
+
+  .jobTitle {
+    font-size: 3vh;
+  }
+
+  .rPanel {
+    text-align: left !important;
+    min-height: 70vh;
+    height: 100% !important;
+  }
+
+  .mb-spaced {
+    padding-top: 0px;
+    justify-content: center !important;
+  }
 }
-
-

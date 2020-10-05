@@ -1,12 +1,12 @@
 <div class="container-fluid">
   <div class="row full-height">
-    <div class="col-sm-4 bg-b1 panel lPanel">
+    <div class="col-sm-12 col-md-12 col-lg-4 bg-a1 panel lPanel">
       <div class="mid-container">
         <h1>Habilidades</h1>
       </div>
     </div>
-    <div class="col-sm-8 bg-b2 panel rPanel">
-      <div class="mid-container">
+    <div class="col-sm-12 col-md-12 col-lg-8 bg-a2 panel rPanel">
+      <div class="mid-container mb-spaced">
         <div class="row row-cols-1" *ngFor="let data of skillData">
           <h6 class="title">
             {{ data.title }} <small class="percent">{{ data.percent }}%</small>

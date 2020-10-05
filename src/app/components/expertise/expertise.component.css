@@ -11,3 +11,29 @@ h5 {
   color: var(--title-highlight) !important;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 767px){
+  .rPanel {
+    height: 1000% !important;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .rPanel {
+    height: 100% !important;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 992px){
+
+}

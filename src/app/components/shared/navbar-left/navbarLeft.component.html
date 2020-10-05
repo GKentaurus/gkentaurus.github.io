@@ -1,16 +1,61 @@
 <div class="row sidenav" [ngStyle]="menuStyle">
-  <ul id="menu" (mouseleave)="removeClass()" class="menuList hide">
-    <a
-      [id]="item.id"
-      *ngFor="let item of menuOptions"
-      [routerLink]="item.id"
-      [ngClass]="'menu-item'"
-      (mouseenter)="mouseEnterItem(item.id)"
-      (mouseleave)="mouseLeaveItem(item.id)"
-    >
-      <ng-container *ngIf="item.show">
-        <li>{{ item.title }}</li>
-      </ng-container>
-    </a>
-  </ul>
+  <div class="col menu-list responsive">
+    <div class="bg-shadow"></div>
+    <ul (mouseleave)="removeClass()" class="menuList responsive">
+      <a
+        [id]="item.id"
+        *ngFor="let item of menuOptions"
+        [routerLink]="item.id"
+        [ngClass]="'menu-item'"
+        (mouseenter)="mouseEnterItem(item.id)"
+        (mouseleave)="mouseLeaveItem(item.id)"
+        (click)="hideMenu()"
+      >
+        <ng-container *ngIf="item.show">
+          <li>{{ item.title }}</li>
+        </ng-container>
+      </a>
+      <a
+        [id]="item.id"
+        *ngFor="let item of menuOptions"
+        [routerLink]="item.id"
+        [ngClass]="'menu-item'"
+        (mouseenter)="mouseEnterItem(item.id)"
+        (mouseleave)="mouseLeaveItem(item.id)"
+        class="desktop"
+      >
+        <ng-container *ngIf="item.show">
+          <li>{{ item.title }}</li>
+        </ng-container>
+      </a>
+    </ul>
+  </div>
+  <div class="col menu-list desktop">
+    <ul (mouseleave)="removeClass()" class="menuList desktop">
+      <a
+        [id]="item.id"
+        *ngFor="let item of menuOptions"
+        [routerLink]="item.id"
+        [ngClass]="'menu-item'"
+        (mouseenter)="mouseEnterItem(item.id)"
+        (mouseleave)="mouseLeaveItem(item.id)"
+      >
+        <ng-container *ngIf="item.show">
+          <li>{{ item.title }}</li>
+        </ng-container>
+      </a>
+    </ul>
+  </div>
+  <div class="col responsive">
+    <div class="show-menu">
+      <div class="menu-icon">
+        <div (click)="showMenu()" class="show-button">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div (click)="hideMenu()" class="hide-button">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

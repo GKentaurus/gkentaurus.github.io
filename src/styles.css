@@ -33,18 +33,6 @@ body {
   padding-left: 50px !important;
 }
 
-.lPanel {
-  text-align: right;
-}
-
-.rPanel {
-  text-align: left;
-}
-
-.full-height {
-  height: 100vh;
-}
-
 .mid-container {
   position: relative;
   height: 100%;
@@ -64,4 +52,53 @@ ul.component {
 ul.component > li {
   list-style-type: none;
   margin-left: -20px;
+}
+
+@media only screen and (max-width: 767px){
+  .lPanel {
+    min-height: 30vh;
+    height: 30vh;
+    text-align: center;
+  }
+
+  .rPanel {
+    min-height: 70vh;
+    height: 70vh;
+    text-align: left;
+  }
+
+  .panel {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .lPanel {
+    min-height: 30vh;
+    height: 30vh;
+    text-align: center;
+  }
+
+  .rPanel {
+    min-height: 70vh;
+    height: 70vh;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .full-height {
+    height: 100vh !important;
+  }
+
+  .lPanel {
+    text-align: right;
+    height: 100vh;
+  }
+
+  .rPanel {
+    text-align: left;
+    height: 100vh;
+  }
 }
