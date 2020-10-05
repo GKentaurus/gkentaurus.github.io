@@ -6,9 +6,10 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { CoursesComponent } from './pages/courses/courses.component';
 import { EducationComponent } from './pages/education/education.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { CoursesComponent } from './pages/courses/courses.component';
 
 import { Err404Component } from './components/errors/err404/err404.component';
 
@@ -16,42 +17,47 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    data: { animationState: 'One' }
+    data: { animationState: 'home' }
   },
   {
     path: 'profile',
     component: ProfileComponent,
-    data: { animationState: 'Two' }
+    data: { animationState: 'profile' }
   },
   {
     path: 'expertise',
     component: ExpertiseComponent,
-    data: { animationState: 'Three' }
+    data: { animationState: 'expertise' }
   },
   {
     path: 'skills',
     component: SkillsComponent,
-    data: { animationState: 'Four' }
+    data: { animationState: 'skills' }
   },
   {
     path: 'experience',
     component: ExperienceComponent,
-    data: { animationState: 'Five' }
+    data: { animationState: 'experience' }
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioComponent,
+    data: { animationState: 'portfolio' }
   },
   {
     path: 'education',
     component: EducationComponent,
-    data: { animationState: 'Six' }
+    data: { animationState: 'education' }
   },
   {
     path: 'courses',
     component: CoursesComponent,
-    data: { animationState: 'Seven' }
+    data: { animationState: 'courses' }
   },
   {
     path: 'contact',
     component: ContactComponent,
-    data: { animationState: 'Eight' }
+    data: { animationState: 'contact' }
   },
   {
     path: '404',

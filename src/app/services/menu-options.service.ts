@@ -36,6 +36,12 @@ export class MenuOptionsService {
       show: true
     },
     {
+      title: 'Portafolio',
+      id: 'portfolio',
+      link: 'portfolio',
+      show: true
+    },
+    {
       title: 'Cursos',
       id: 'cursos',
       link: 'courses',
@@ -46,18 +52,6 @@ export class MenuOptionsService {
       id: 'educacion',
       link: 'education',
       show: true
-    },
-    {
-      title: 'Perfiles',
-      id: 'perfiles',
-      link: 'profiles',
-      show: false
-    },
-    {
-      title: 'Portafolio',
-      id: 'portafolio',
-      link: 'catalog',
-      show: false
     },
     {
       title: 'Clientes',

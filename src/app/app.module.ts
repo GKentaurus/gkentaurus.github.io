@@ -16,6 +16,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { MenuOptionsService } from './services/menu-options.service';
 import { CoursesComponent } from './pages/courses/courses.component';
 import { Err404Component } from './components/errors/err404/err404.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Err404Component } from './components/errors/err404/err404.component';
     EducationComponent,
     ContactComponent,
     CoursesComponent,
-    Err404Component
+    Err404Component,
+    PortfolioComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [MenuOptionsService],

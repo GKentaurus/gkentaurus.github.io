@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row full-height">
+    <div class="col-sm-12 col-md-12 col-lg-4 bg-a1 panel lPanel">
+      <div class="mid-container">
+        <h1>Cursos y<br /><small> certificaciones</small></h1>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-8 bg-a2 panel rPanel">
+      <div class="mid-container">
+        <div class="row row-cols-1 row-cols-md-1 text-center">
+          <h5>Una pequeña muestra de los proyectos en los que he trabajado</h5>
+        </div>
+        <div class="row ">
+          <div class="card-deck">
+            <div
+              *ngFor="let portfolio of portfolioData"
+              class="card"
+            >
+              <img [src]="portfolio.image" class="card-img-top" [alt]="portfolio.title">
+              <div class="card-body">
+                <h5 class="card-title">{{portfolio.title}}</h5>
+                <p class="card-text">{{portfolio.description}}</p>
+                <div>
+                  <a [href]="portfolio.link" target="_blank">Ir al repositorio</a>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><span>Lenguajes:</span> {{portfolio.language}}</small>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
