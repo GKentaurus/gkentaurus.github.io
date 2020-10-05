@@ -5,24 +5,11 @@
       <a
         [id]="item.id + '-responsive'"
         *ngFor="let item of menuOptions"
-        [routerLink]="item.id"
+        [routerLink]="item.link"
         [ngClass]="'menu-item'"
         (mouseenter)="mouseEnterItem(item.id)"
         (mouseleave)="mouseLeaveItem(item.id)"
         (click)="hideMenu()"
-      >
-        <ng-container *ngIf="item.show">
-          <li>{{ item.title }}</li>
-        </ng-container>
-      </a>
-      <a
-        [id]="item.id + '-desktop'"
-        *ngFor="let item of menuOptions"
-        [routerLink]="item.id"
-        [ngClass]="'menu-item'"
-        (mouseenter)="mouseEnterItem(item.id)"
-        (mouseleave)="mouseLeaveItem(item.id)"
-        class="desktop"
       >
         <ng-container *ngIf="item.show">
           <li>{{ item.title }}</li>
@@ -35,7 +22,7 @@
       <a
         [id]="item.id"
         *ngFor="let item of menuOptions"
-        [routerLink]="item.id"
+        [routerLink]="item.link"
         [ngClass]="'menu-item'"
         (mouseenter)="mouseEnterItem(item.id)"
         (mouseleave)="mouseLeaveItem(item.id)"

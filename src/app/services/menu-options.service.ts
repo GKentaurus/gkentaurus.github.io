@@ -8,51 +8,67 @@ export class MenuOptionsService {
     {
       title: 'Inicio',
       id: 'inicio',
+      link: '/',
       show: true
     },
     {
       title: 'Perfil',
       id: 'perfil',
+      link: '/profile',
       show: true
     },
     {
       title: 'Pericia',
       id: 'pericia',
+      link: 'expertise',
       show: true
     },
     {
       title: 'Habilidades',
       id: 'habilidades',
+      link: 'skills',
       show: true
     },
     {
       title: 'Experiencia',
       id: 'experiencia',
+      link: 'experience',
+      show: true
+    },
+    {
+      title: 'Cursos',
+      id: 'cursos',
+      link: 'courses',
       show: true
     },
     {
       title: 'Educación',
       id: 'educacion',
+      link: 'education',
       show: true
     },
     {
       title: 'Perfiles',
       id: 'perfiles',
+      link: 'profiles',
       show: false
     },
     {
       title: 'Portafolio',
       id: 'portafolio',
+      link: 'catalog',
       show: false
     },
     {
       title: 'Clientes',
       id: 'clientes',
+      link: 'clients',
       show: false
     },
     {
       title: 'Contacto',
       id: 'contacto',
+      link: 'contact',
       show: true
     }
   ];
