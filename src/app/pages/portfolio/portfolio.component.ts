@@ -8,20 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioComponent implements OnInit {
   portfolioData = [
     {
-      title: 'Módulo de pagos con PayU',
-      image: '../../../assets//images/payu-logo.jpg',
+      title: 'Módulo para Prestashop de pagos con PayU',
+      image: '../../../assets//images/payu_logo.png',
       language: 'PHP, HTML5, CSS3, JS',
-      link: 'https://bitbucket.org/',
+      link: 'https://bitbucket.org/GKentaurus/mtspayuapi_v1.6/src/master/',
       description:
-        'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+        'Este módulo permite al propietario de una tienda de prestashop, dar la opcíon de pagos en línea a cualquier usuario que así lo desee, sea por tarjetas de crédito, transferencias o consignaciones en efectivo.'
     },
     {
-      title: 'Módulo de facturación electrónica con Allegra',
-      image: '../../../assets//images/alegra-logo.jpg',
+      title: 'Módulo para Prestashop de facturación electrónica con Allegra',
+      image: '../../../assets//images/alegra_logo.png',
       language: 'PHP, HTML5, CSS3, JS',
-      link: 'https://bitbucket.org/',
+      link: 'https://bitbucket.org/GKentaurus/mtsallegraapi/src/master/',
       description:
-        'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+        'Este módulo permite enviar la información necesaria para crear un cliente (razón social), productos, inventarios y registrar una factura de venta para posteriormente ser enviada electrónicamente.'
     }
   ];
 

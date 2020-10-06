@@ -12,7 +12,6 @@
 
 .highlight {
   color: var(--title-highlight) !important;
-  font-weight: bold;
 }
 
 .fa-icon-custom {
@@ -21,6 +20,10 @@
 
 .mini-card {
   margin-bottom: 10px;
+}
+
+.card-text {
+  text-align: justify;
 }
 
 h5 {
@@ -33,18 +36,23 @@ h6 {
 }
 
 a {
+  text-decoration: underline;
   color: white;
   transition: all .2s ease-in-out;
 }
 
 a:hover {
   transform: scale(1.1);
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--title-highlight);
 }
 
 span {
-  color: darkgrey;
+  color: var(--title-highlight);
+}
+
+small {
+  color: lightgray !important;
 }
 
 @media only screen and (max-width: 767px){

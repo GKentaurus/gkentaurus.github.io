@@ -3,7 +3,7 @@
   background-color: #434343 !important;
   border: 0px !important;
   transition: all .2s ease-in-out;
-
+  margin-bottom: 10px;
 }
 
 .card:hover {
@@ -12,15 +12,10 @@
 
 .highlight {
   color: var(--title-highlight) !important;
-  font-weight: bold;
 }
 
 .fa-icon-custom {
   font-size: 3em !important;
-}
-
-.mini-card {
-  margin-bottom: 10px;
 }
 
 h5 {

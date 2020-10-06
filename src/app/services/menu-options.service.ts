@@ -39,7 +39,7 @@ export class MenuOptionsService {
       title: 'Portafolio',
       id: 'portfolio',
       link: 'portfolio',
-      show: false
+      show: true
     },
     {
       title: 'Cursos',

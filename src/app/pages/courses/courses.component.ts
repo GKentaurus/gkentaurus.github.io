@@ -9,35 +9,41 @@ import { Title } from '@angular/platform-browser';
 export class CoursesComponent implements OnInit, OnDestroy {
   coursesData = [
     {
-      title: 'Angular 10 Básico/Intermedio',
+      title1: 'Angular 10 ',
+      title2: 'Básico/Intermedio',
       platform: 'Udemy.com',
       link: 'https://www.udemy.com/course/angular-2-fernando-herrera/'
     },
     {
-      title: 'Universidad Java (JDK 14)',
+      title1: 'Universidad Java',
+      title2: '(JDK 14)',
       platform: 'Udemy.com',
       link:
         'https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/'
     },
     {
-      title: 'Fundamentos de Python 3.x',
+      title1: 'Fundamentos de',
+      title2: 'Python 3.x',
       platform: 'Udemy.com',
       link:
         'https://www.udemy.com/course/aprende-el-lenguaje-de-programacion-python3-practicando/'
     },
     {
-      title: 'API RESTful con Laravel',
+      title1: 'API RESTful',
+      title2: 'con Laravel 5.x +',
       platform: 'Udemy.com',
       link:
         'https://www.udemy.com/course/api-restful-con-laravel-php-homestead-passport/'
     },
     {
-      title: 'PHP7 y MySQL',
+      title1: 'Fundamentos en',
+      title2: 'PHP7 y MySQL',
       platform: 'Udemy.com',
       link: 'https://www.udemy.com/course/php-y-mysql/'
     },
     {
-      title: 'Diseño Web con HTML5 - CSS3',
+      title1: 'Diseño Web',
+      title2: 'con HTML5 y CSS3',
       platform: 'Udemy.com',
       link: 'https://www.udemy.com/course/curso-html5-css3/'
     }
