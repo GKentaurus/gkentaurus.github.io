@@ -1,6 +1,5 @@
 h1 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 40vh;
   font-weight: 900;
   color: var(--title-highlight);
 }
@@ -12,4 +11,47 @@ a {
 
 span {
   font-weight: 200;
+}
+
+
+@media only screen and (max-width: 767px){
+  h1 {
+    font-size: 20vh;
+  }
+
+  h2 {
+    font-size: 3vh;
+  }
+
+  .full-height {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  h1 {
+    font-size: 20vh;
+  }
+
+  h2 {
+    font-size: 3vh;
+  }
+
+  .full-height {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  h1 {
+    font-size: 30vh;
+  }
+
+  h2 {
+    font-size: 3vh;
+  }
+
+  .full-height {
+    min-height: 100vh;
+  }
 }
