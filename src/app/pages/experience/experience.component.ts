@@ -31,11 +31,22 @@ export class ExperienceComponent implements OnInit, OnDestroy {
       company: 'QPCOM Colombia',
       job: 'Director Técnico',
       start: 'Enero 2018',
-      end: 'Actualmente',
+      end: 'Noviembre 2020',
       achievements: [
         'Desarrollo de macros para informes de cartera.',
         'Desarrollo de macros para sugeridos de inventario.',
         'Implementación de una intranet básica.'
+      ]
+    },
+    {
+      company: 'EURO DECO',
+      job: 'Desarrollador',
+      start: 'Diciembre 2020',
+      end: 'Actualmente',
+      achievements: [
+        'Desarrollo de API RESTfull en Laravel.',
+        'Desarrollo de aplicación móvil, consumiendo recursos de la API.',
+        'Diseño y desarrollo de página web.'
       ]
     }
   ];
