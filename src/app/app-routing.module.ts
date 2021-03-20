@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-// import { Routes, RouterModule } from '@angular/router';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
@@ -68,7 +67,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'top',
+    relativeLinkResolution: 'corrected'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

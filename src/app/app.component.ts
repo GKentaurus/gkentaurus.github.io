@@ -12,11 +12,11 @@ export class AppComponent {
   title = 'gkentaurus';
   constructor() {}
 
-  prepareRoute(outlet: RouterOutlet) {
+  prepareRoute(outlet: RouterOutlet): any {
     return (
       outlet &&
       outlet.activatedRouteData &&
-      outlet.activatedRouteData['animationState']
+      outlet.activatedRouteData.animationState
     );
   }
 }

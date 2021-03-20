@@ -34,7 +34,11 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
     Err404Component,
     PortfolioComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
+  ],
   providers: [MenuOptionsService],
   bootstrap: [AppComponent]
 })
