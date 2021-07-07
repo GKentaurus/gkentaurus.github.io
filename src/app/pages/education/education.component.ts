@@ -24,7 +24,7 @@ export class EducationComponent implements OnInit, OnDestroy {
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Contacto');
+    this.title.setTitle('GKentaurus > Estudios principales');
   }
 
   ngOnDestroy(): void {

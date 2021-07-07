@@ -57,15 +57,15 @@ export class SkillsComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Java',
-      percent: 60
+      percent: 80
     },
     {
       title: 'Python',
-      percent: 20
+      percent: 40
     },
     {
       title: 'GIT',
-      percent: 40
+      percent: 60
     }
   ];
   constructor(private title: Title) {}
