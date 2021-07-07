@@ -13,7 +13,7 @@ export class SkillsComponent implements OnInit, OnDestroy {
   skillData = [
     {
       title: 'HTML5',
-      percent: 80
+      percent: 70
     },
     {
       title: 'CSS3',
@@ -57,15 +57,15 @@ export class SkillsComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Java',
-      percent: 60
+      percent: 90
     },
     {
       title: 'Python',
-      percent: 20
+      percent: 40
     },
     {
       title: 'GIT',
-      percent: 40
+      percent: 60
     }
   ];
   constructor(private title: Title) {}

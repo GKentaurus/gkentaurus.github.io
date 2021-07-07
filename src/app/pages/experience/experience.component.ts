@@ -42,11 +42,20 @@ export class ExperienceComponent implements OnInit, OnDestroy {
       company: 'EURO DECO',
       job: 'Desarrollador',
       start: 'Diciembre 2020',
-      end: 'Actualmente',
+      end: 'Mayo 2021',
       achievements: [
         'Desarrollo de API RESTfull en Laravel.',
-        'Desarrollo de aplicación móvil, consumiendo recursos de la API.',
         'Diseño y desarrollo de página web.'
+      ]
+    },
+    {
+      company: 'ScotiaGBS (Scotiabank)',
+      job: 'Senior Analyst Programmer',
+      start: 'Mayo 2021',
+      end: 'Actualmente',
+      achievements: [
+        'Desarrollo de aplicaciones en Spring Boot',
+        'Desarrollo de aplicaciones batch con Java'
       ]
     }
   ];
