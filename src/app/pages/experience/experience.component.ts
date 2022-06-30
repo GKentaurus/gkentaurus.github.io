@@ -34,7 +34,7 @@ export class ExperienceComponent implements OnInit, OnDestroy {
       end: 'November 2020',
       achievements: [
         'Development of macros for late payment reports by clients.',
-        'Development of macros for inventory suggestions',
+        'Development of macros for inventory suggestions. ',
         'Basic Intranet implementation.'
       ]
     },
@@ -64,7 +64,7 @@ export class ExperienceComponent implements OnInit, OnDestroy {
       start: 'May 2022',
       end: 'Currently',
       achievements: [
-        'Technical desing for multiple new implementations',
+        'Technical desing for multiple new implementations.',
         'Development consultant for developer team members.'
       ]
     }
