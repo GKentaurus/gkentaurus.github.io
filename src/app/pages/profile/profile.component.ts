@@ -10,7 +10,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Perfil');
+    this.title.setTitle('GKentaurus > Profile');
   }
 
   ngOnDestroy(): void {

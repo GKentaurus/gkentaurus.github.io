@@ -12,32 +12,20 @@ export class SkillsComponent implements OnInit, OnDestroy {
   state = false;
   skillData = [
     {
-      title: 'HTML5',
-      percent: 80
+      title: 'Java',
+      percent: 95
     },
     {
-      title: 'CSS3',
-      percent: 60
+      title: 'Spring Boot Framework',
+      percent: 95
     },
     {
-      title: 'Bootstrap 4+',
-      percent: 60
+      title: 'SQL',
+      percent: 75
     },
     {
-      title: 'JQuery 3',
-      percent: 40
-    },
-    {
-      title: 'JavaScript / TypeScript ES5+',
-      percent: 80
-    },
-    {
-      title: 'Angular 10+',
-      percent: 60
-    },
-    {
-      title: 'ReactJs',
-      percent: 20
+      title: 'Git',
+      percent: 90
     },
     {
       title: 'PHP',
@@ -45,27 +33,43 @@ export class SkillsComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Laravel',
-      percent: 60
+      percent: 75
     },
     {
-      title: 'MySQL',
-      percent: 60
+      title: 'Python',
+      percent: 75
+    },
+    {
+      title: 'HTML5',
+      percent: 90
+    },
+    {
+      title: 'CSS3',
+      percent: 90
+    },
+    {
+      title: 'Bootstrap 4+',
+      percent: 75
+    },
+    {
+      title: 'JavaScript / TypeScript ES5+',
+      percent: 90
+    },
+    {
+      title: 'Angular 10',
+      percent: 75
+    },
+    {
+      title: 'ReactJs',
+      percent: 30
     },
     {
       title: 'Visual Basic',
       percent: 40
     },
     {
-      title: 'Java',
-      percent: 80
-    },
-    {
-      title: 'Python',
+      title: 'Shell Commands',
       percent: 40
-    },
-    {
-      title: 'GIT',
-      percent: 60
     }
   ];
   constructor(private title: Title) {}
@@ -76,7 +80,7 @@ export class SkillsComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Habilidades');
+    this.title.setTitle('GKentaurus > Skills');
   }
 
   ngOnDestroy(): void {

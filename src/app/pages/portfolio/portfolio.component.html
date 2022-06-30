@@ -8,27 +8,31 @@
     <div class="col-sm-12 col-md-12 col-lg-8 bg-a2 panel rPanel">
       <div class="mid-container">
         <div class="row row-cols-1 row-cols-md-1 text-center">
-          <h5>Una pequeña muestra de los proyectos en los que he trabajado</h5>
+          <h5>A little sample of the projects which I carried on</h5>
         </div>
-        <div class="row ">
+        <div class="row">
           <div class="card-deck">
-            <div
-              *ngFor="let portfolio of portfolioData"
-              class="card"
-            >
-              <img [src]="portfolio.image" class="card-img-top" [alt]="portfolio.title">
+            <div *ngFor="let portfolio of portfolioData" class="card">
+              <img
+                [src]="portfolio.image"
+                class="card-img-top"
+                [alt]="portfolio.title"
+              />
               <div class="card-body">
-                <h5 class="card-title highlight">{{portfolio.title}}</h5>
-                <p class="card-text">{{portfolio.description}}</p>
+                <h5 class="card-title highlight">{{ portfolio.title }}</h5>
+                <p class="card-text">{{ portfolio.description }}</p>
                 <div>
-                  <a [href]="portfolio.link" target="_blank">Ir al repositorio</a>
+                  <a [href]="portfolio.link" target="_blank">Go to repo</a>
                 </div>
               </div>
               <div class="card-footer">
-                <small class="text-muted"><span>Lenguajes:</span> {{portfolio.language}}</small>
+                <small class="text-muted">
+                  <span>Language:</span> {{ portfolio.language }}
+                </small>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>

@@ -2,16 +2,19 @@
   <div class="row full-height">
     <div class="col-sm-12 col-md-12 col-lg-4 bg-a1 panel lPanel">
       <div class="mid-container">
-        <h1>Contacto</h1>
+        <h1>Contact</h1>
       </div>
     </div>
     <div class="col-sm-12 col-md-12 col-lg-8 bg-a2 panel rPanel">
       <div class="mid-container">
         <div class="row row-cols-1 row-cols-md-1 text-center">
-          <h5>Siéntete libre de contactarme por cualquier medio</h5>
+          <h5>Feel free to contact me</h5>
         </div>
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 mb-spaced">
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.whatsapp.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.whatsapp.show"
+          >
             <div class="card">
               <a [href]="contactData.whatsapp.link" target="_blank">
                 <div class="card-body">
@@ -21,82 +24,106 @@
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.email.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.email.show"
+          >
             <div class="card">
               <a [href]="contactData.email.link" target="_blank">
                 <div class="card-body">
                   <i class="fas fa-envelope fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">Correo</h6>
+                  <h6 class="card-title">Email</h6>
                 </div>
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.skype.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.skype.show"
+          >
             <div class="card">
               <a [href]="contactData.skype.link" target="_blank">
                 <div class="card-body">
                   <i class="fab fa-skype fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">skype</h6>
+                  <h6 class="card-title">Skype</h6>
                 </div>
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.facebook.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.facebook.show"
+          >
             <!-- Facebook Data -->
             <div class="card">
               <a [href]="contactData.facebook.link" target="_blank">
                 <div class="card-body">
                   <i class="fab fa-facebook-f fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">facebook</h6>
+                  <h6 class="card-title">Facebook</h6>
                 </div>
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.twitter.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.twitter.show"
+          >
             <!-- Twitter Data -->
             <div class="card">
               <a [href]="contactData.twitter.link" target="_blank">
                 <div class="card-body">
                   <i class="fab fa-twitter fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">twitter</h6>
+                  <h6 class="card-title">Twitter</h6>
                 </div>
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.instagram.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.instagram.show"
+          >
             <!-- Instagram Data -->
             <div class="card">
               <a [href]="contactData.instagram.link" target="_blank">
                 <div class="card-body">
                   <i class="fab fa-instagram fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">instagram</h6>
+                  <h6 class="card-title">Instagram</h6>
                 </div>
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.linkedin.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.linkedin.show"
+          >
             <!-- linkedin Data -->
             <div class="card">
               <a [href]="contactData.linkedin.link" target="_blank">
                 <div class="card-body">
                   <i class="fab fa-linkedin-in fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">linkedin</h6>
+                  <h6 class="card-title">linkedIn</h6>
                 </div>
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.github.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.github.show"
+          >
             <!-- Github Data -->
             <div class="card">
               <a [href]="contactData.github.link" target="_blank">
                 <div class="card-body">
                   <i class="fab fa-github fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">github</h6>
+                  <h6 class="card-title">GitHub</h6>
                 </div>
               </a>
             </div>
           </div>
-          <div class="mini-card col-sm-12 col-md-6 col-lg-4" *ngIf="contactData.hackerrank.show">
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.hackerrank.show"
+          >
             <div class="card">
               <a [href]="contactData.hackerrank.link" target="_blank">
                 <div class="card-body">

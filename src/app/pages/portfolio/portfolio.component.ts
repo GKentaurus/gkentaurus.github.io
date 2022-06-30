@@ -9,27 +9,27 @@ import {Title} from '@angular/platform-browser';
 export class PortfolioComponent implements OnInit, OnDestroy {
   portfolioData = [
     {
-      title: 'Módulo para Prestashop de pagos con PayU',
+      title: 'Prestashop\'s PayU Latam online payment module',
       image: '../../../assets//images/payu_logo.png',
       language: 'PHP, HTML5, CSS3, JS',
       link: 'https://bitbucket.org/GKentaurus/mtspayuapi_v1.6/src/master/',
       description:
-        'Este módulo permite al propietario de una tienda de prestashop, dar la opcíon de pagos en línea a cualquier usuario que así lo desee, sea por tarjetas de crédito, transferencias o consignaciones en efectivo.'
+        'This module allows the e-commerce owner to give end customers the option to pay for their orders with multiple online payment methods, such as credit card, bank transfer or cash deposit.'
     },
     {
-      title: 'Módulo para Prestashop de facturación electrónica con Allegra',
+      title: 'Prestashop\'s Allegra electronic billing module',
       image: '../../../assets//images/alegra_logo.png',
       language: 'PHP, HTML5, CSS3, JS',
       link: 'https://bitbucket.org/GKentaurus/mtsallegraapi/src/master/',
       description:
-        'Este módulo permite enviar la información necesaria para crear un cliente (razón social), productos, inventarios y registrar una factura de venta para posteriormente ser enviada electrónicamente.'
+        'This module allows you to send the necessary information to create a new customer, product, update the inventory warehouse and register a sales invoice to be sent electronically.'
     }
   ];
 
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Portafolio');
+    this.title.setTitle('GKentaurus > Portfolio');
   }
 
   ngOnDestroy(): void {

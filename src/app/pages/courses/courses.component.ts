@@ -10,40 +10,40 @@ export class CoursesComponent implements OnInit, OnDestroy {
   coursesData = [
     {
       title1: 'Angular 10 ',
-      title2: 'Básico/Intermedio',
+      title2: 'Basic/Intermediate',
       platform: 'Udemy.com',
       link: 'https://www.udemy.com/course/angular-2-fernando-herrera/'
     },
     {
-      title1: 'Universidad Java',
+      title1: 'Java University',
       title2: '(JDK 14)',
       platform: 'Udemy.com',
       link:
         'https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/'
     },
     {
-      title1: 'Fundamentos de',
-      title2: 'Python 3.x',
+      title1: 'Python 3.x',
+      title2: 'Fundamentals',
       platform: 'Udemy.com',
       link:
         'https://www.udemy.com/course/aprende-el-lenguaje-de-programacion-python3-practicando/'
     },
     {
       title1: 'API RESTful',
-      title2: 'con Laravel 5.x +',
+      title2: 'with Laravel 5.x +',
       platform: 'Udemy.com',
       link:
         'https://www.udemy.com/course/api-restful-con-laravel-php-homestead-passport/'
     },
     {
-      title1: 'Fundamentos en',
-      title2: 'PHP7 y MySQL',
+      title1: 'PHP7 y MySQL',
+      title2: 'Fundamentals',
       platform: 'Udemy.com',
       link: 'https://www.udemy.com/course/php-y-mysql/'
     },
     {
-      title1: 'Diseño Web',
-      title2: 'con HTML5 y CSS3',
+      title1: 'Web Design',
+      title2: 'with HTML5 and CSS3',
       platform: 'Udemy.com',
       link: 'https://www.udemy.com/course/curso-html5-css3/'
     }
@@ -51,7 +51,7 @@ export class CoursesComponent implements OnInit, OnDestroy {
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Estudios adicionales');
+    this.title.setTitle('GKentaurus > Additional Studies');
   }
 
   ngOnDestroy(): void {

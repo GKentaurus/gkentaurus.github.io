@@ -10,59 +10,69 @@ export class ExperienceComponent implements OnInit, OnDestroy {
   expData = [
     {
       company: 'QPCOM Colombia',
-      job: 'Asistente técnico',
-      start: 'Marzo 2012',
-      end: 'Diciembre 2013',
+      job: 'Technical Assistant',
+      start: 'March 2012',
+      end: 'December 2013',
       achievements: [
-        'Desarrollo de una base de datos para registro y seguimiento de equipos en garantía.',
-        'Desarrollo de una base de datos para registro y seguimiento llamadas de soporte técnico.'
+        'Development of a database for registration and follow-up of equipment under warranty.',
+        'Development of a database for registration and follow-up of technical support calls.'
       ]
     },
     {
       company: 'QPCOM Colombia',
-      job: 'Ejecutivo de Ventas',
-      start: 'Enero 2014',
-      end: 'Diciembre 2017',
+      job: 'Sales Executive',
+      start: 'January 2014',
+      end: 'December 2017',
       achievements: [
-        'Desarrollo de macros para informes de ventas por periodos.'
+        'Development of macros for sales reports by periods.'
       ]
     },
     {
       company: 'QPCOM Colombia',
-      job: 'Director Técnico',
-      start: 'Enero 2018',
-      end: 'Noviembre 2020',
+      job: 'Technical Director',
+      start: 'January 2018',
+      end: 'November 2020',
       achievements: [
-        'Desarrollo de macros para informes de cartera.',
-        'Desarrollo de macros para sugeridos de inventario.',
-        'Implementación de una intranet básica.'
+        'Development of macros for late payment reports by clients.',
+        'Development of macros for inventory suggestions',
+        'Basic Intranet implementation.'
       ]
     },
     {
       company: 'EURO DECO',
-      job: 'Desarrollador',
-      start: 'Diciembre 2020',
-      end: 'Mayo 2021',
+      job: 'Fullstack Developer',
+      start: 'December 2020',
+      end: 'May 2021',
       achievements: [
-        'Desarrollo de API RESTfull en Laravel.',
-        'Diseño y desarrollo de página web.'
+        'API RESTfull develpment in Laravel.',
+        'Web page design and development in Angular.'
       ]
     },
     {
       company: 'ScotiaGBS (Scotiabank)',
-      job: 'Senior Analyst Programmer',
+      job: 'Backend Software Engineer Associate',
       start: 'Mayo 2021',
-      end: 'Actualmente',
+      end: 'April 2022',
       achievements: [
-        'Desarrollo de aplicaciones en Spring Boot',
-        'Desarrollo de aplicaciones batch con Java'
+        'SpringBoot microservices development.',
+        'Java batch processing programs development.'
+      ]
+    },
+    {
+      company: 'ScotiaGBS (Scotiabank)',
+      job: 'Backend Software Engineer Specialist',
+      start: 'May 2022',
+      end: 'Currently',
+      achievements: [
+        'Technical desing for multiple new implementations',
+        'Development consultant for developer team members.'
       ]
     }
   ];
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Experiencia');
+    this.title.setTitle('GKentaurus > Work Experience');
   }
 
   ngOnDestroy(): void {

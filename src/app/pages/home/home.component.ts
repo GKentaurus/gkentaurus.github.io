@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Inicio');
+    this.title.setTitle('GKentaurus > Home');
   }
 
   ngOnDestroy(): void {

@@ -2,28 +2,37 @@
   <div class="row full-height">
     <div class="col-sm-12 col-md-12 col-lg-4 bg-a1 panel lPanel">
       <div class="mid-container">
-        <h1>Cursos y<br /><small> certificaciones</small></h1>
+        <h1>Online courses and<br /><small> certifications</small></h1>
       </div>
     </div>
     <div class="col-sm-12 col-md-12 col-lg-8 bg-a2 panel rPanel">
       <div class="mid-container">
         <div class="row row-cols-1 row-cols-md-1 text-center">
-          <h5>Muchos de estos cursos han sido actualizados a la versión mas reciente del <br> framework o lenguaje, lo cual me ha permitido mantenerme al tanto</h5>
+          <h5>
+            Many of this courses had been updated to the latest <br />
+            therefore keeps me up to date
+          </h5>
         </div>
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 mb-spaced">
           <div
             *ngFor="let course of coursesData; let i = index"
-            class="card-group col-sm-12 col-md-6 col-lg-4">
+            class="card-group col-sm-12 col-md-6 col-lg-4"
+          >
             <div class="card">
               <a [href]="course.link" target="_blank">
                 <div class="card-body">
-                  <h6 class="card-title text-center highlight">{{course.title1}}</h6>
-                  <h6 class="card-title text-center highlight">{{course.title2}}</h6>
-                  <span>{{course.platform}}</span>
+                  <h6 class="card-title text-center highlight">
+                    {{ course.title1 }}
+                  </h6>
+                  <h6 class="card-title text-center highlight">
+                    {{ course.title2 }}
+                  </h6>
+                  <span>{{ course.platform }}</span>
                 </div>
               </a>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>

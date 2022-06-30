@@ -9,30 +9,30 @@ import { Title } from '@angular/platform-browser';
 export class ExpertiseComponent implements OnInit, OnDestroy {
   cardData = [
     {
-      title: 'Trabajo en equipo',
+      title: 'Team work',
       description:
-        'Excelente comunicación, coordinación y sinergia con los demás integrantes del equipo, para llevar a cabo los proyectos impuestos.'
+        'Excellent communication, coordination and synergy with the other members of the team, to carry out the imposed projects.'
     },
     {
       title: 'Mentor',
       description:
-        'Gran capacidad de exponer y explicar temáticas básicas y complejas, para el entendimiento de los demás, con el fin de avanzar como equipo.'
+        'Great ability to expose and explain basic and complex topics, for the understanding of others, in order to advance as a team.'
     },
     {
-      title: 'Ordenado',
+      title: 'Organized',
       description:
-        'Para un mayor entendimiento, escalabilidad y mantenimiento en los proyectos, me gusta mantener un orden que pueda ser práctico y útil para todos.'
+        'For better understanding, scalability and maintenance in projects, I like to keep an order that can be practical and useful for everyone.'
     },
     {
-      title: 'Aprendizaje',
+      title: 'Learning',
       description:
-        'Soy autodidacta y de constante actualización de información. Me gusta estar al tanto de las tendencias de desarrollo, para ofrecer mejores soluciones.'
+        'I am self-taught and constantly updating myself. I like to keep abreast of development trends, to offer better solutions.'
     }
   ];
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Pericia');
+    this.title.setTitle('GKentaurus > Expertise');
   }
 
   ngOnDestroy(): void {

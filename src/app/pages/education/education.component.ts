@@ -9,13 +9,13 @@ import { Title } from '@angular/platform-browser';
 export class EducationComponent implements OnInit, OnDestroy {
   educationData = [
     {
-      title: 'Técnico en Informática, Programación y Diseño Web',
+      title: 'Computer Science, Development and Web Design Technician',
       institution: 'Instituto OANDES',
       finished: '2008 - 2009',
-      achievements: ['Mejor promedio académico de la promoción.']
+      achievements: ['Best academic average student']
     },
     {
-      title: 'Tecnólogo en Análisis y Desarrollo de Sistemas de Información',
+      title: 'Information Systems Analysis and Development Technologist',
       institution: 'Servicio Nacional de Aprendizaje - SENA',
       finished: '2020 - Actualmente',
       achievements: []
@@ -24,7 +24,7 @@ export class EducationComponent implements OnInit, OnDestroy {
   constructor(private title: Title) {}
 
   ngOnInit(): void {
-    this.title.setTitle('GKentaurus > Estudios principales');
+    this.title.setTitle('GKentaurus > Main Degrees');
   }
 
   ngOnDestroy(): void {
