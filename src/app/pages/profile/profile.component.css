@@ -8,23 +8,64 @@ p {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 320px) {
+  .top-spaced {
+    margin-top: 380px;
+  }
   p {
     font-size: 18px;
     text-align: justify;
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 375px) {
+  .top-spaced {
+    margin-top: 280px;
+  }
   p {
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
   }
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 425px) {
+  .top-spaced {
+    margin-top: 200px;
+  }
   p {
-    font-size: 22px;
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .top-spaced {
+    margin-top: 100px;
+  }
+  p {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .top-spaced {
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-spaced {
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 20px;
     text-align: justify;
   }
 }

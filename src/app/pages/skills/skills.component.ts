@@ -70,6 +70,10 @@ export class SkillsComponent implements OnInit, OnDestroy {
     {
       title: 'Shell Commands',
       percent: 40
+    },
+    {
+      title: 'English',
+      percent: 75
     }
   ];
   constructor(private title: Title) {}

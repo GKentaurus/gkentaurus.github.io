@@ -17,7 +17,7 @@ export class EducationComponent implements OnInit, OnDestroy {
     {
       title: 'Information Systems Analysis and Development Technologist',
       institution: 'Servicio Nacional de Aprendizaje - SENA',
-      finished: '2020 - Actualmente',
+      finished: '2020 - Currently (2022)',
       achievements: []
     }
   ];

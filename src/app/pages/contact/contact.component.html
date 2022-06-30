@@ -101,7 +101,7 @@
               <a [href]="contactData.linkedin.link" target="_blank">
                 <div class="card-body">
                   <i class="fab fa-linkedin-in fa-1x" aria-hidden="true"></i>
-                  <h6 class="card-title">linkedIn</h6>
+                  <h6 class="card-title">linked In</h6>
                 </div>
               </a>
             </div>
@@ -129,6 +129,19 @@
                 <div class="card-body">
                   <i class="fab fa-hackerrank fa-1x" aria-hidden="true"></i>
                   <h6 class="card-title">hacker rank</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="mini-card col-sm-12 col-md-6 col-lg-4"
+            *ngIf="contactData.cv.show"
+          >
+            <div class="card">
+              <a [href]="contactData.cv.link" target="_blank">
+                <div class="card-body">
+                  <i class="fa fa-file-pdf fa-1x" aria-hidden="true"></i>
+                  <h6 class="card-title">Curriculum Vitae</h6>
                 </div>
               </a>
             </div>

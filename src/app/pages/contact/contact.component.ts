@@ -9,15 +9,15 @@ import { Title } from '@angular/platform-browser';
 export class ContactComponent implements OnInit, OnDestroy {
   contactData = {
     facebook: {
-      show: true,
+      show: false,
       link: 'https://www.facebook.com/GKentaurus/'
     },
     twitter: {
-      show: true,
+      show: false,
       link: 'https://twitter.com/GKentaurus'
     },
     instagram: {
-      show: true,
+      show: false,
       link: 'https://www.instagram.com/GKentaurus/'
     },
     linkedin: {
@@ -43,6 +43,10 @@ export class ContactComponent implements OnInit, OnDestroy {
     skype: {
       show: true,
       link: 'https://join.skype.com/invite/y4ZiL3E4mQxg'
+    },
+    cv: {
+      show: true,
+      link: 'assets/files/cv_carlos_moreno_cifuentes.pdf'
     }
   };
   constructor(private title: Title) {}

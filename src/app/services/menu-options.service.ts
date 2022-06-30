@@ -6,62 +6,62 @@ import { Injectable } from '@angular/core';
 export class MenuOptionsService {
   options = [
     {
-      title: 'Inicio',
-      id: 'inicio',
+      title: 'Home',
+      id: 'home',
       link: '/',
       show: true
     },
     {
-      title: 'Perfil',
-      id: 'perfil',
+      title: 'Profile',
+      id: 'profile',
       link: '/profile',
       show: true
     },
     {
-      title: 'Pericia',
-      id: 'pericia',
+      title: 'Expertise',
+      id: 'expertise',
       link: 'expertise',
       show: true
     },
     {
-      title: 'Habilidades',
-      id: 'habilidades',
+      title: 'Skills',
+      id: 'skills',
       link: 'skills',
       show: true
     },
     {
-      title: 'Experiencia',
-      id: 'experiencia',
+      title: 'Experience',
+      id: 'experience',
       link: 'experience',
       show: true
     },
     {
-      title: 'Portafolio',
+      title: 'Portfolio',
       id: 'portfolio',
       link: 'portfolio',
       show: true
     },
     {
-      title: 'Cursos',
-      id: 'cursos',
+      title: 'Courses',
+      id: 'courses',
       link: 'courses',
       show: true
     },
     {
-      title: 'Educación',
-      id: 'educacion',
+      title: 'Education',
+      id: 'education',
       link: 'education',
       show: true
     },
     {
-      title: 'Clientes',
-      id: 'clientes',
+      title: 'Clients',
+      id: 'clients',
       link: 'clients',
       show: false
     },
     {
-      title: 'Contacto',
-      id: 'contacto',
+      title: 'Contact',
+      id: 'contact',
       link: 'contact',
       show: true
     }
