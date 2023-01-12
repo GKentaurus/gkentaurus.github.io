@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit, OnDestroy {
     },
     linkedin: {
       show: true,
-      link: 'https://www.linkedin.com/in/camorenoc/'
+      link: 'https://www.linkedin.com/in/gkentaurus/'
     },
     github: {
       show: true,
